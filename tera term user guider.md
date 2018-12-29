@@ -10,7 +10,7 @@ Tera Term can display hexadecimal after the following configuration.
 You edit TERATERM.INI in the Tera Term installed directory. In most cases, it will be in C:\Program Files (x86)\teraterm.
 
 Before
-
+```
 ; Display all characters (debug mode)
 Debug=off
 ; Debug mode type which can be selected by user.
@@ -32,6 +32,8 @@ Debug=on
 ; hex = hex output
 ; noout = disable output completely
 DebugModes=hex
+
+```
 
 Next, you restart Tera Term and press Shift key and Escape key at the same time and turn on hexadecimal display.
 
