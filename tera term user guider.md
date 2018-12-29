@@ -13,33 +13,28 @@ Before
 ```
 ; Display all characters (debug mode)
 Debug=off
-; Debug mode type which can be selected by user.
-; on|all = All types
-; off|none = Disabled debug mode
-; normal = usual teraterm debug mode
-; hex = hex output
-; noout = disable output completely
-DebugModes=all
+
+; Delimters for word selection
+;  (compatible with earlier versions of Tera Term)
+;  DelimList=$20
+;  DelimDBCS=off
+DelimList=$20!"#$24%&'()*+,:;<=>?@[\]^`{|}
+DelimDBCS=on
 
 After
 
 ; Display all characters (debug mode)
 Debug=on
-; Debug mode type which can be selected by user.
-; on|all = All types
-; off|none = Disabled debug mode
-; normal = usual teraterm debug mode
-; hex = hex output
-; noout = disable output completely
-DebugModes=hex
+
+; Delimters for word selection
+;  (compatible with earlier versions of Tera Term)
+;  DelimList=$20
+;  DelimDBCS=off
+DelimList=$20!"#$24%&'()*+,:;<=>?@[\]^`{|}
+DelimDBCS=on
 
 ```
-
-Next, you restart Tera Term and press Shift key and Escape key at the same time and turn on hexadecimal display.
-
-By this configuration, you can see hexadecimal returned by KeiganMotor on Tera Term.
-
-When you execute the above macro  demo_1, the log will be as follows.
+然后重启tera term, 使用 shift + ESC 组合件切换显示模式，有时需要切换2次，直到显示HEX码为止
 
 
 
