@@ -1,4 +1,4 @@
-#如何让tera term显示HEX码
+# 如何让tera term显示HEX码
 
 Display HEX with Tera Term
 
